@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="공기질 관리 전문기업 하츠 브랜드 사이트. 청공조기 제품 정보, 회사 소개, 고객 서비스 관련 내용 등 제공.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Haatz">
+    <meta property="og:url" content="http://hyunnnn.dothome.co.kr/haatz/">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="공기질 관리 전문기업 하츠 브랜드 사이트. 청공조기 제품 정보, 회사 소개, 고객 서비스 관련 내용 등 제공.">
+    <title>HAATZ</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+    <!-- iOS transform 자동실행 버그발생해서 head로 옮겨줌 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="skipNavi">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">
+                <a href="index.html">하츠</a>
+            </h1>
+            <a class="m_nav" href="#">메뉴열기</a>
+            <div class="m_dimm"></div>
+            <aside class="m_gnb_box">
+                <nav class="m_gnb">
+                    <div class="top_gnb">
+                        <a class="m_logo" href="index.html"><img src="m_images/gnb_logo.gif" alt="하츠"></a>
+                        <button class="m_btn_close" type="button">메뉴닫기</button>
+                    </div>
+                    <ul class="m_depth1">
+                        <li>
+                            <a href="#">기업소개</a>
+                            <ul class="m_depth2">
+                                <li>
+                                    <a class="m_plus" href="#">하츠소개</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">CI 소개</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="m_plus" href="#">투자정보</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">IR 자료실</a></li>
+                                        <li><a href="#">공시정보</a></li>
+                                        <li><a href="#">공고</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="m_plus" href="#">인재채용</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">채용공고</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">제품소개</a>
+                            <ul class="m_depth2">
+                                <li><a href="#">우리집에 맞는 하츠제품</a></li>
+                                <li>
+                                    <a class="m_plus" href="#">청공조기</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">에어프레셔</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="m_plus" href="#">주방가전</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">후드</a></li>
+                                        <li><a href="#">쿠킹존</a></li>
+                                        <li><a href="#">쿡탑</a></li>
+                                        <li><a href="#">기타 기기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="m_plus" href="#">공기청정가전</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">환기시스템</a></li>
+                                        <li><a href="#">주방 공기청정기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="m_plus" href="#">소모품/액세서리</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">주방가전</a></li>
+                                        <li><a href="#">공기청정가전</a></li>
+                                        <li><a href="#">인테리어 소품</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="m_plus" href="#">공기질관리 솔루션</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">공동주택 공기질 관리</a></li>
+                                        <li><a href="#">학교 공기질 관리</a></li>
+                                        <li><a href="#">다중이용시설 공기질 관리</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul class="m_depth2">
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li>
+                                    <a class="m_plus" href="#">유지관리 가이드</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">청공조기</a></li>
+                                        <li><a href="#">후드</a></li>
+                                        <li><a href="#">쿡탑</a></li>
+                                        <li><a href="#">환기시스템</a></li>
+                                        <li><a href="#">공기청정가전</a></li>
+                                        <li><a href="#">하츠앱</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">A/S 신청 및 조회</a></li>
+                                <li><a href="#">사용설명서</a></li>
+                                <li><a href="#">서비스정책</a></li>
+                                <li><a href="#">구매처 안내</a></li>
+                                <li><a href="#">환기 전문대리점 개설 문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">홍보센터</a>
+                            <ul class="m_depth2">
+                                <li>
+                                    <a class="m_plus" href="#">공기질 연구소</a>
+                                    <ul class="m_depth3">
+                                        <li><a href="#">공기 이야기</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">하츠 NEWS</a></li>
+                                <li><a href="#">홍보영상</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="m_haatz_mall" href="#">하츠몰</a>
+                </nav>
+            </aside>
+            <nav class="gnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="#">기업소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">하츠소개</a></li>
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">투자정보</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">제품소개</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">우리집에 맞는 하츠제품</a>
+                            </li>
+                            <li>
+                                <a class="plus" href="#"><span>청공조기</span></a>
+                                <ul class="depth3">
+                                    <li><a href="#">- 에어프레셔</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="plus" href="#"><span>주방가전</span></a>
+                                <ul class="depth3">
+                                    <li><a href="#">- 후드</a></li>
+                                    <li><a href="#">- 쿠킹존</a></li>
+                                    <li><a href="#">- 쿡탑</a></li>
+                                    <li><a href="#">- 기타 기기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="plus" href="#"><span>공기청정가전</span></a>
+                                <ul class="depth3">
+                                    <li><a href="#">- 환기시스템</a></li>
+                                    <li><a href="#">- 주방 공기청정기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="plus" href="#"><span>소모품/액세서리</span></a>
+                                <ul class="depth3">
+                                    <li><a href="#">- 주방가전</a></li>
+                                    <li><a href="#">- 공기청정가전</a></li>
+                                    <li><a href="#">- 인테리어 소품</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="plus" href="#"><span>공기질관리 솔루션</span></a>
+                                <ul class="depth3">
+                                    <li><a href="#">- 공동주택 공기질 관리</a></li>
+                                    <li><a href="#">- 학교 공기질 관리</a></li>
+                                    <li><a href="#">- 다중이용시설 공기질 관리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                        <ul class="depth2">
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">유지관리 가이드</a></li>
+                            <li><a href="#">A/S 신청 및 조회</a></li>
+                            <li><a href="#">사용설명서</a></li>
+                            <li><a href="#">서비스정책</a></li>
+                            <li><a href="#">구매처 안내</a></li>
+                            <li><a href="#">고객의 소리</a></li>
+                            <li><a href="#">환기 전문대리점 개설 문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보센터</a>
+                        <ul class="depth2">
+                            <li><a href="#">공기질 연구소</a></li>
+                            <li><a href="#">하츠 NEWS</a></li>
+                            <li><a href="#">하츠 서포터즈</a></li>
+                            <li><a href="#">홍보영상</a></li>
+                            <li><a href="#">하츠 공식 SNS 채널</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="util_wrap">
+                <ul class="util">
+                    <li class="find_pd"><a href="#">제품찾기</a></li>
+                    <li class="haatzMall"><a href="http://www.haatzmall.com/shop/main/index.php" target="_blank">하츠몰</a></li>
+                    <li>
+                        <a class="btn_search" href="#">검색열기</a>
+                        <div class="search_wrap">
+                            <form>
+                                <fieldset>
+                                    <legend>통합검색</legend>
+                                    <div class="input_wrap">
+                                        <input type="text" title="제품명을 입력해주세요." placeholder="제품명을 입력해주세요.">
+                                        <button class="btn_small_search" type="button">검색</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="m_search_wrap">
+                            <div class="top_search">
+                                <button class="m_btn_close" type="button">검색창 닫기</button>
+                                <h3>제품검색</h3>
+                            </div>
+                            <form>
+                                <fieldset>
+                                    <legend>통합검색</legend>
+                                    <div class="m_input_wrap">
+                                        <input type="text" title="제품명을 입력해주세요" placeholder="제품명 또는 제품모델을 입력해주세요.">
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <a class="m_btn_search" href="#"><span>검색</span></a>
+                        </div>
+                    </li>
+                    <li class="btn_all_menu"><a href="#">전체메뉴</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="prod_search">
+            <button class="prod_close" type="button">제품찾기 닫기</button>
+            <div class="tab">
+                <h2 class="m_tab_tit">제품찾기</h2>
+                <ul class="tab_inner">
+                    <li class="btn active"><a href="#">주방가전</a></li>
+                    <li class="btn"><a href="#">공기청정가전</a></li>
+                    <li class="btn"><a href="#">기타</a></li>
+                </ul>
+            </div>
+            <div class="prod_inner">
+                <ul class="tab_box box1">
+                    <li>
+                        <h3 class="name">후드</h3>
+                        <ul class="list">
+                            <li><a href="#">엘리카</a></li>
+                            <li><a href="#">플래티늄</a></li>
+                            <li><a href="#">데코</a></li>
+                            <li><a href="#">시스템</a></li>
+                            <li><a href="#">DIY후드</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="name">쿠킹존</h3>
+                        <ul class="list">
+                            <li><a href="#">후드</a></li>
+                            <li><a href="#">쿡탑</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="name">쿡탑</h3>
+                        <ul class="list">
+                            <li><a href="#">전기쿡탑</a></li>
+                            <li><a href="#">가스쿡탑</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="name">빌트인기기</h3>
+                        <ul class="list">
+                            <li><a href="#">살균,건조기류</a></li>
+                            <li><a href="#">싱크볼,수전</a></li>
+                            <li><a href="#">기타상품</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="tab_box box2">
+                    <li>
+                        <h3 class="name">청공조기/주방 공기청정기</h3>
+                        <ul class="list">
+                            <li><a href="#">청공조기</a></li>
+                            <li><a href="#">주방 공기청정기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="name">환기시스템</h3>
+                        <ul class="list">
+                            <li><a href="#">천장형 환기청정기</a></li>
+                            <li><a href="#">벽부착형 환기청정기</a></li>
+                            <li><a href="#">스탠드형 환기청정기</a></li>
+                            <li><a href="#">상업용 환기청정기</a></li>
+                            <li><a href="#">환풍기</a></li>
+                            <li><a href="#">공기청정겸용 전열교환기</a></li>
+                            <li><a href="#">바이패스형 전열교환기</a></li>
+                            <li><a href="#">일반형 전열교환기</a></li>
+                            <li><a href="#">급배기유니트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="name">청정시스템</h3>
+                    </li>
+                </ul>
+                <ul class="tab_box box3">
+                    <li>
+                        <h3 class="name">인테리어 소품</h3>
+                    </li>
+                    <li>
+                        <h3 class="name">소모품/액세서리</h3>
+                        <ul class="list">
+                            <li><a href="#">주방가전</a></li>
+                            <li><a href="#">공기청전가전</a></li>
+                            <li><a href="#">인테리어 소품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="name">공기질관리 솔루션</h3>
+                        <ul class="list">
+                            <li><a href="#">공동주택 공기질 관리</a></li>
+                            <li><a href="#">학교 공기질 관리</a></li>
+                            <li><a href="#">다중이용시설 공기질 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="all_menu_box">
+            <button class="btn_close_menu" type="button">전체메뉴 닫기</button>
+            <span class="line">line</span>
+            <ul class="p_depth1">
+                <li>
+                    <a href="#">기업소개</a>
+                    <ul class="p_depth2">
+                        <li>
+                            <a href="#">하츠소개</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">CI 소개</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">사업소개</a></li>
+                        <li>
+                            <a href="#">투자정보</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">주주/이사회/감사</a></li>
+                                <li><a href="#">내부정보관리규정</a></li>
+                                <li><a href="#">주가정보</a></li>
+                                <li><a href="#">요약 재무정보</a></li>
+                                <li><a href="#">IR 자료실</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">공고</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">윤리경영</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">사이버신고센터</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인재채용</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">인재상</a></li>
+                                <li><a href="#">직무소개</a></li>
+                                <li><a href="#">채용 프로세스</a></li>
+                                <li><a href="#">채용공고</a></li>
+                                <li><a href="#">About Haatz</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품소개</a>
+                    <ul class="p_depth2">
+                        <li><a href="#">우리집에 맞는 하츠제품</a></li>
+                        <li>
+                            <a href="#">청공조기</a>
+                            <ul class="p_depth3">
+                                <li>
+                                    <a href="#">에어프레셔</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">하츠 제품 바로알기</a></li>
+                                        <li><a href="#">제품보기</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">주방가전</a>
+                            <ul class="p_depth3">
+                                <li>
+                                    <a href="#">후드</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">하츠 제품 바로알기</a></li>
+                                        <li><a href="#">제품보기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">쿠킹존</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">하츠 제품 바로알기</a></li>
+                                        <li><a href="#">제품보기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">쿡탑</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">하츠 제품 바로알기</a></li>
+                                        <li><a href="#">제품보기</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">기타 기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">공기청정가전</a>
+                            <ul class="p_depth3">
+                                <li>
+                                    <a href="#">환기시스템</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">하츠 제품 바로알기</a></li>
+                                        <li><a href="#">제품보기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">주방 공기청정기</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">하츠 제품 바로알기</a></li>
+                                        <li><a href="#">제품보기</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">소모품/액세서리</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">주방가전</a></li>
+                                <li><a href="#">공기청정가전</a></li>
+                                <li><a href="#">인테리어 소품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">공기질관리 솔루션</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">공동주택 공기질 관리</a></li>
+                                <li><a href="#">학교 공기질 관리</a></li>
+                                <li><a href="#">다중이용시설 공기질 관리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객지원</a>
+                    <ul class="p_depth2">
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li>
+                            <a href="#">유지관리 가이드</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">청공조기</a></li>
+                                <li>
+                                    <a href="#">후드</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">후드 외관청소</a></li>
+                                        <li><a href="#">필터관리/교체</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">쿡탑</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">가스쿡탑</a></li>
+                                        <li><a href="#">전기쿡탑</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">환기시스템</a></li>
+                                <li><a href="#">공기청정가전</a></li>
+                                <li><a href="#">하츠앱</a></li>
+                                <li>
+                                    <a href="#">기타</a>
+                                    <ul class="p_depth4">
+                                        <li><a href="#">식기건조기</a></li>
+                                        <li><a href="#">음식물탈수기</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">A/S 신청 및 조회</a></li>
+                        <li><a href="#">사용설명서</a></li>
+                        <li><a href="#">서비스정책</a></li>
+                        <li><a href="#">구매처 안내</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">환기 전문대리점 개설 문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">홍보센터</a>
+                    <ul class="p_depth2">
+                        <li>
+                            <a href="#">공기질 연구소</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">공기 이야기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">하츠 NEWS</a></li>
+                        <li><a href="#">하츠 서포터즈</a></li>
+                        <li><a href="#">홍보영상</a></li>
+                        <li><a href="#">하츠 공식 SNS 채널</a></li>
+                        <li>
+                            <a href="#">사회공헌</a>
+                            <ul class="p_depth3">
+                                <li><a href="#">주요사회공헌활동</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="dimm_header"></div>
+        <div id="container">
+            <section class="main_slider_wrap">
+                <h2 class="blind">메인 슬라이더</h2>
+                <div class="swiper-container main_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide01">
+                            <div class="txt_wrap">
+                                <h2>하츠가 만드는<br>건강한 주방</h2>
+                                <p>국내 1위 후드전문 브랜드 하츠가 건강한 주방 공기를<br>연구하고, 청정 주방의 기준이 됩니다</p>
+                                <div class="btn_detail_view">
+                                    <a href="#">후드 제품보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide02">
+                            <div class="txt_wrap">
+                                <h2>후드와 쿡탑을<br>한번에 자동으로!</h2>
+                                <p>스마트한 쿠킹존으로<br>더욱 편리하게 요리하세요</p>
+                                <div class="btn_detail_view">
+                                    <a href="#">쿠킹존 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <a class="btn_scroll" href="#">스크롤버튼</a>
+                </div>
+            </section>
+            <section class="main_product">
+                <h2 class="blind">메인 프로덕트</h2>
+                <div class="left">
+                    <div class="box">
+                        <a href="javascript:void(0)">
+                            <div class="txt_box">
+                                <p>하츠의 다양한<br><em>제품 라인업</em></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ul class="right">
+                    <li class="box box1">
+                        <a href="javascript:void(0)">
+                            <div class="txt_box">
+                                <p>하츠제품<br><em>바로알기</em></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="box box2">
+                        <a href="javascript:void(0)">
+                            <div class="txt_box">
+                                <p>우리집에 맞는<br><em>하츠제품</em></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="line_up">
+                    <ul>
+                        <li class="line1">
+                            <div class="img_box">
+                                <img src="images/lineup_icon1.png" alt="icon">
+                                <img src="images/lineup_tit1.png" alt="kitchen electric">
+                            </div>
+                            <h3 class="tit">주방가전</h3>
+                            <div class="link_box link1">
+                                <a href="#">후드</a>
+                                <a href="#">쿠킹존</a>
+                                <a href="#">쿡탑</a>
+                                <a href="#">빌트인기기</a>
+                            </div>
+                        </li>
+                        <li class="line2">
+                            <div class="img_box">
+                                <img src="images/lineup_icon2.png" alt="icon">
+                                <img src="images/lineup_tit2.png" alt="air cleaner electric">
+                            </div>
+                            <h3 class="tit">공기청정가전</h3>
+                            <div class="link_box link2">
+                                <a href="#">환기시스템</a>
+                                <a href="#">청정시스템</a>
+                                <a href="#">환기청정기</a>
+                                <a href="#">주방 <br>공기청정기</a>
+                            </div>
+                        </li>
+                        <li class="line3">
+                            <div class="img_box">
+                                <img src="images/lineup_icon3.png" alt="icon">
+                                <img src="images/lineup_tit3.png" alt="aqm solution">
+                            </div>
+                            <h3 class="tit">공기질 관리 솔루션</h3>
+                            <div class="link_box link3">
+                                <a href="#">공동주택<br>공기질 관리</a>
+                                <a href="#">학교<br>공기질 관리</a>
+                                <a href="#">다중이용시설<br>공기질 관리</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="line_close" type="button">닫기</button>
+                </div>
+                <div class="know_product">
+                    <ul class="up">
+                        <li class="up1">
+                            <h2>하츠제품<br><em>바로알기</em></h2>
+                        </li>
+                        <li class="up2">
+                            <a href="#">
+                                <div class="bg">
+                                    <img src="images/product_bg1.jpg" alt="background">
+                                </div>
+                                <div class="txt_wrap">
+                                    <h3 class="tit">후드편</h3>
+                                    <p>주거환경에 예술적<br>감각을 더하다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="up3">
+                            <a href="#">
+                                <div class="bg">
+                                    <img src="images/product_bg2.jpg" alt="background">
+                                </div>
+                                <div class="txt_wrap">
+                                    <h3 class="tit">가스쿡탑편</h3>
+                                    <p>어떤 주방에도 잘 어울리는<br>특별함이 있다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="up4">
+                            <a href="#">
+                                <div class="bg">
+                                    <img src="images/product_bg3.jpg" alt="background">
+                                </div>
+                                <div class="txt_wrap">
+                                    <h3 class="tit">전기쿡탑편</h3>
+                                    <p>쾌적한 공간에서 요리하는<br>즐거움이 더해지다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="up5">
+                            <a href="#">
+                                <div class="bg">
+                                    <img src="images/product_bg4.jpg" alt="background">
+                                </div>
+                                <div class="txt_wrap">
+                                    <h3 class="tit">쿠킹존편</h3>
+                                    <p>더 스마트하게 더 편리하게<br>업그레이드 되다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="up6">
+                            <a href="#">
+                                <div class="bg">
+                                    <img src="images/product_bg5.jpg" alt="background">
+                                </div>
+                                <div class="txt_wrap">
+                                    <h3 class="tit">환기편</h3>
+                                    <p>인공지능으로 알아서<br>쾌적한 환경을 만들다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="up7">
+                            <a href="#">
+                                <div class="bg">
+                                    <img src="images/product_bg6.jpg" alt="background">
+                                </div>
+                                <div class="txt_wrap">
+                                    <h3 class="tit">환기청정기편</h3>
+                                    <p>신개념공기질관리시스템으로<br>청정한 공기를 만나다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="up8">
+                            <a href="#">
+                                <div class="bg">
+                                    <img src="images/product_bg7.jpg" alt="background">
+                                </div>
+                                <div class="txt_wrap">
+                                    <h3 class="tit">주방 공기청정기편</h3>
+                                    <p>첨단 기술이 주방을<br>더욱 쾌적하게 변화시키다.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="prod_close" type="button">닫기</button>
+                </div>
+            </section>
+            <section class="main_support">
+                <div class="support_bg"></div>
+                <div class="support_inner">
+                    <div class="main_tit">
+                        <div class="img_wrap">
+                            <img src="images/mainCon_tit3.png" alt="support">
+                        </div>
+                        <h2><em>무엇을</em> 도와드릴까요?</h2>
+                    </div>
+                    <div class="m_main_tit">
+                        <h2>무엇을<br><em>도와드릴까요?</em></h2>
+                    </div>
+                    <ul class="sup_wrap">
+                        <li>
+                            <a href="#">
+                                <div class="txt_wrap">
+                                    <h3>A/S신청 및 조회</h3>
+                                    <p>불편하신 부분을 빠르게<br>처리해 드리겠습니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="txt_wrap">
+                                    <h3>자주묻는 질문</h3>
+                                    <p>궁금하신 내용을 빠르게<br>찾아 보실 수 있습니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="txt_wrap">
+                                    <h3>유지관리 가이드</h3>
+                                    <p>유지관리를 쉽고 편리하게<br>도와드립니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main_news">
+                <div class="main_tit">
+                    <div class="img_wrap">
+                        <img src="images/mainCon_tit2.png" alt="news">
+                    </div>
+                    <h2><em>하츠의 새소식</em>을 전해드립니다.</h2>
+                </div>
+                <h2 class="m_main_tit"><em>하츠의 새소식</em>을<br>전해드립니다.</h2>
+                <div class="swiper-container news_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="news_wrap">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="images/B20201013104549130.jpg" alt="image">
+                                    </div>
+                                    <div class="txt_box">
+                                        <span class="tit">보도기사</span>
+                                        <h3>(주)하츠, 경기도 취약계층 이용시설에 환기청정기 기증</h3>
+                                        <p>(주)하츠, 경기도 취약계층 이용시설에 환기청정기 기증 실내 공기질 오염 기준치 초과한 취약 시설에 대형 환기청정기 5대 무상 설치 (사)사랑의 집수리와 맑은 숨터 만들기 프로젝트…환경 개선 필요한 시설에 추가 지원 검토</p>
+                                        <span class="date">2020.11.10</span>
+                                        <span class="view">81462</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news_wrap">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="images/B20201013104549130.jpg" alt="image">
+                                    </div>
+                                    <div class="txt_box">
+                                        <span class="tit">보도기사</span>
+                                        <h3>(주)하츠, 살균까지 가능한 환기청정기 ‘로파 S’ 출시</h3>
+                                        <p>하츠, 살균까지 가능한 환기청정기 ‘로파 S’ 출시 첨단 UV-LED 광촉매 기술로 살균 환기가 가능한 신개념 환기청정기 첫 선</p>
+                                        <span class="date">2020.10.19</span>
+                                        <span class="view">80928</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news_wrap">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img class="imgW" src="images/optimize.jpg" alt="image">
+                                    </div>
+                                    <div class="txt_box">
+                                        <span class="tit">보도기사</span>
+                                        <h3>(주)하츠, 홈추족의 깨끗한 주방을 위한 주방 후드 추천</h3>
+                                        <p>(주)하츠, 홈추족의 깨끗한 주방을 위한 주방 후드 추천 ‘ㄱ’자 주방, 일자형 주방 등 구조에 따라 활용하기 좋은 베스트 주방 후드 제안 쿡탑을 켜면 후드도 자동 켜지는 스마트한 ‘쿠킹존’ 시스템으로 주방 공기 주기적 환기</p>
+                                        <span class="date">2020.09.28</span>
+                                        <span class="view">81450</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <h2 class="blind">푸터</h2>
+            <div class="top_wrap">
+                <a class="btn_top" href="#">위로 이동</a>
+            </div>
+            <div class="footer_inner">
+                <ul class="link">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">사용설명서 다운로드</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">하츠몰</a></li>
+                </ul>
+                <div class="m_link">
+                    <div class="top">
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                    </div>
+                    <div class="bottom">
+                        <a href="#">이메일무단수집거부</a>
+                    </div>
+                </div>
+                <div class="bottom_footer">
+                    <div class="addr">
+                        <p>본사 경기도 평택시 진위면 동부대로 202</p>
+                        <p>사업장주소 서울특별시 강남구 강남대로 456 한석타워 11/12층</p>
+                        <p>대표이사 김성식</p>
+                        <p>사업자등록번호 128-81-06145</p>
+                        <p>통신판매번호 2015-경기송탄-133</p>
+                        <p>고객센터 1644-0806</p>
+                    </div>
+                    <div class="m_addr">
+                        <p>본사 서울특별시 강남구 강남대로 456 한석타워 11/12층</p>
+                        <p>대표이사 김성식<span>|</span>사업자등록번호 128-81-06145</p>
+                        <p>통신판매번호 2015-경기송탄-133</p>
+                        <p>고객센터 1644-0806</p>
+                    </div>
+                    <p class="copy">COPYRIGHT 2017 HAATZ INC. ALL RIGHTS RESERVED.</p>
+                    <div class="prize">
+                        <a href="#">prize1</a>
+                        <a href="#">prize2</a>
+                        <a href="#">prize3</a>
+                        <a href="#">prize4</a>
+                    </div>
+                    <div class="sns_wrap">
+                        <a class="blog" href="#">블로그</a>
+                        <a class="insta" href="#">인스타그램</a>
+                        <a class="facebook" href="#">페이스북</a>
+                        <a class="youtube" href="#">유튜브</a>
+                    </div>
+                    <div class="family">
+                        <button class="btn_family" type="button">Family site</button>
+                        <ul class="list_family">
+                            <li><a href="#">하츠몰</a></li>
+                            <li><a href="#">벽산</a></li>
+                            <li><a href="#">벽산페인트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js?v=<?php echo time(); ?>"></script>
+</body>
+</html>
