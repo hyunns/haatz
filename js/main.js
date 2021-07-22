@@ -57,7 +57,7 @@
         speed: 500,
         autoplay: {
             delay: 4000,
-            disableOnInteraction: false, // 안쪽 버튼 클릭시 안 멈추게 함
+            disableOnInteraction: false,
         },
         pagination: {
             el: '.swiper-pagination',
