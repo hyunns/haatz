@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-/* 웹폰트  */
-/* ?#iefix : 익스하위에서 아래쪽 woff, ttf를 다운로드 받지않게 함 */
-/* cross-origin: 요청데이터의 서버가 다름 서버가 다를때는 주고받고가 안됌 */
-/* 닷홈에서 woff파일에 대한 매입을 추가하면 문제해결됨(백엔드) */
 @font-face {
     font-family: 'NanumSquare';
     font-style: normal;
@@ -41,7 +37,6 @@
         url(../font/NanumSquareEB.ttf) format('truetype');
 }
 
-/* 반응형, 모바일에서 모든 태그와 모든 가상요소에 box-sizing사용하여 선, 패딩이 크기안에 포함되도록 함 */
 *, :before, :after {box-sizing: border-box;}
 
 /* body에 들어갈 수 있는 모든 태그의 여백 빼기, 폼 요소는 없음 */
@@ -90,12 +85,6 @@ body { line-height: 1.5; -webkit-text-size-adjust: none; }
 ******************** 공통스타일 ********************
 ***************************************************/
 
-/* pc브라우저에서 body hidden시 우측스크롤바가 사라지므로 화면이 17px 움직이면서 보이게됨 
-html에 우측스크롤바를 강제생성하고 body높이를 창높이에 맞춰서 hidden하여 우측스크롤영역이 강제로 보이게함
-- body 높이를 줄여서 hidden이므로 화면이 최상단으로 이동됨 */
-/* html {overflow-y: scroll; height: 100%;} */
-/* body.on {overflow: hidden; height:100%;} */
-
 body, input, button, select, textarea, table {
     font-family: 'NanumSquare', '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
     font-size: 15px;
@@ -119,11 +108,6 @@ legend, caption, .blind { position: absolute; overflow: hidden; clip: rect(0 0 0
 /* Firefox 19+ 상위버전 */
 :-ms-input-placeholder { color: #777 !important; }
 
-/* IE10+ 익스에서 컬러가 안 바뀌면(오류) important써서 10000점*/
-
-/* 텍스트 선택시 컬러변경 */
-/* ::selection { background-color: #ff9fcf; color: #ffffff; } */
-
 /* skip navgation */
 #skipNavi a { position: absolute; left: 0; top: -999px; width: 100%; padding: 5px 0; background: #fff; z-index: 99999; text-align: center; }
 
@@ -132,67 +116,15 @@ legend, caption, .blind { position: absolute; overflow: hidden; clip: rect(0 0 0
 /* 폼요소 공통스타일 */
 input[type="text"]::-ms-clear { display: none; }
 
-/* input[type="password"]::-ms-reveal {display: none;} */
-
-/* 체크박스 다음에 있는 label요소 한개선택(인접형제선택자) */
-/* input[type="checkbox"] + label {cursor: pointer; line-height: 30px; display: inline-block; position: relative;} input[type="checkbox"] + label:before { content: ''; display: inline-block; width:26px; height: 26px; border-radius: 50%; border:2px solid #dddddd; vertical-align: middle; margin-right: 10px; }
-input[type="checkbox"] + label em {color:green;}
-input[type="checkbox"] + label:after { content: ''; position: absolute; left:5px; top:5px; width:0px; height: 20px; background: url(../images/icon_checkbox.png) no-repeat; transition: all 0.2s; } */
-
-/* checkbox와 radio에 :checked 가상선택자 사용하여 체크상태 판단 */
-/* input[type="checkbox"]:checked + label:after {width:24px;} */
-
-
-/* select 공통 */
-/* 배경색 지정시 부모로 처리 */
-/* .select_wrap {display: inline-block; width:196px; border:2px solid #dddddd; margin-left:6px; position: relative;}
-.select_wrap:after {content: ''; position: absolute; right:15px; top:50%; margin-top:-3px; width:12px; height:7px; background: url(../images/icon_select_arr.png) no-repeat;}
-.select_wrap select {width:100%; height: 41px; border:none; outline: none; color:#999999; padding-left: 15px; position: relative; z-index: 10; background: none;} */
-
 /* 화살표제거 */
 select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 select::-ms-expand { display: none; } /* 익스11이하 */
 
-/* textarea {background:#f8f8f8; width:100%; border:none; padding: 15px; outline: none; box-sizing: border-box;} */
-
-/* 파일선택 공통 */
-/* .file_wrap { width:466px; border:2px solid #dddddd; display: inline-block; padding-right: 98px; box-sizing: border-box; position: relative; cursor: pointer; }
-.file_wrap:before {content: ''; position: absolute; right:96px; top:50%; width:2px; height: 16px; margin-top:-8px; background: #e8e8e8;}
-.file_wrap input[type="text"] {height:40px; width:100%; border:none; outline: none;}
-.file_wrap:after {content: '파일선택'; position: absolute; right:18px; top:50%; color:#009223; font-weight: 500; margin-top:-12px;}
-.file_note {font-size: 13px; color: #999999; margin-left: 25px;} */
-
 /* 버튼 공통 스타일 */
 .btn { display: inline-block; text-align: center; }
 
-.btn.btn_orange { background: #fff; border: 1px solid #ff7200; color: #ff7200; font-size: 13px; padding: 7px 14px; }
-.btn.btn_orange:hover { color: #fff; background: #ff7200; }
-.btn.btn_green { background-color: #009223; color: #fff; border: 2px solid #009223; }
-.btn.btn_regist:after { content: ''; display: inline-block; width: 21px; height: 16px; background: url(../images/icon_reg.png) no-repeat; margin-left: 5px; }
-
-/* 슬라이더 버튼 loop아닐 때 */
-.swiper-button-disabled { opacity: 1 !important; cursor: pointer !important; pointer-events: all !important; }
-
-/* 폰트컬러 공통 */
-.txt_orange { color: #eb6242; font-weight: 500; }
-.txt_blue { color: #0ba9b5; font-weight: 700; }
-
-/* 체크박스 공통 */
-.checkbox_wrap { text-align: left; margin-left: 6px; }
-.checkbox_wrap input[type="checkbox"]:checked+label:before { background: url(../images/icon_checkbox.png) no-repeat; background-size: 20px; }
-.checkbox_wrap label { padding-left: 32px; cursor: pointer; position: relative; }
-.checkbox_wrap label:before { content: ''; position: absolute; left: 0; top: 0; width: 20px; height: 20px; border: 2px solid #ddd; border-radius: 5px; }
-
-/* sprite 아이콘 공통스타일 */
-.icon { display: inline-block; background: url(../images/sp_main_153a02.png) no-repeat; background-size: 440px; vertical-align: top; }
-
-/* button안에 icon이 수직정렬로 들어가야할 경우 기본값인 baseline으로 처리 */
-/* button .icon {vertical-align: baseline;} */
-
 body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow-y: scroll; /* overflow: hidden; */ }
 
-/* transform을 사용할 경우 이동하기전 원래위치로 파악해서 가로스크롤이 생기는 버그가 있음 */
-/* 익스에서 가로스크롤 나올경우 overflow-x:hidden; */
 #wrap { min-width: 320px; position: relative; overflow-x: hidden;}
 /* 전체메뉴 클릭시 */
 #wrap.on {height: 1400px; overflow: hidden;}
@@ -439,17 +371,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow-y: scroll;
 .main_product .know_product.on {left:0; opacity:1; transition: all 0.5s; }
 .main_product .know_product.on .up li { transform: translateX(0); opacity: 1; }
 .main_product .know_product .up { height: 100%; }
-.main_product .know_product .up li {
-    float: left;
-    position: relative;
-    text-align: center;
-    width: 25%;
-    height: 50%;
-    z-index: 10;
-    transform: translateX(50%);
-    opacity: 0;
-    transition: transform 0.6s 0.4s, opacity 0.6s 0.4s;
-}
+.main_product .know_product .up li { float: left; position: relative; text-align: center; width: 25%; height: 50%; z-index: 10; transform: translateX(50%); opacity: 0; transition: transform 0.6s 0.4s, opacity 0.6s 0.4s; }
 .main_product .know_product .up li:nth-child(2) {transition-delay: 0.5s;}
 .main_product .know_product .up li:nth-child(3) {transition-delay: 0.6s;}
 .main_product .know_product .up li:nth-child(4) {transition-delay: 0.7s;}
@@ -722,50 +644,13 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow-y: scroll;
     .main_product .know_product {height: 280px; top: 280px;}
     .main_product .know_product.on {transition: none;}
     .main_product .know_product.on .up li {transform: none;}
-    .main_product .know_product .up li+li:before {
-        background-image: url(../m_images/mainproduct2_img2.png);
-        background-size: 53px;
-        width: 53px;
-        height: 37px;
-        top: 30px;
-        transition: none;
-    }
-    .main_product .know_product .up li + li:nth-child(3):before {
-        background-image: url(../m_images/mainproduct2_img3.png);
-        background-size: 48px;
-        width: 48px;
-        height: 38px;
-    }
-    .main_product .know_product .up li + li:nth-child(4):before {
-        background-image: url(../m_images/mainproduct2_img4.png);
-        background-size: 45px;
-        width: 45px;
-        height: 38px;
-    }
-    .main_product .know_product .up li + li:nth-child(5):before {
-        background-image: url(../m_images/mainproduct2_img5.png);
-        background-size: 40px;
-        width: 40px;
-        height: 63px;
-    }
-    .main_product .know_product .up li + li:nth-child(6):before {
-        background-image: url(../m_images/mainproduct2_img6.png);
-        background-size: 38px;
-        width: 38px;
-        height: 38px;
-    }
-    .main_product .know_product .up li + li:nth-child(7):before {
-        background-image: url(../m_images/mainproduct2_img7.png);
-        background-size: 44px;
-        width: 44px;
-        height: 37px;
-    }
-    .main_product .know_product .up li + li:nth-child(8):before {
-        background-image: url(../m_images/mainproduct2_img8.png);
-        background-size: 35px;
-        width: 35px;
-        height: 38px;
-    }
+    .main_product .know_product .up li+li:before { background-image: url(../m_images/mainproduct2_img2.png); background-size: 53px; width: 53px; height: 37px; top: 30px; transition: none; }
+    .main_product .know_product .up li + li:nth-child(3):before { background-image: url(../m_images/mainproduct2_img3.png); background-size: 48px; width: 48px; height: 38px; }
+    .main_product .know_product .up li + li:nth-child(4):before { background-image: url(../m_images/mainproduct2_img4.png); background-size: 45px; width: 45px; height: 38px; }
+    .main_product .know_product .up li + li:nth-child(5):before { background-image: url(../m_images/mainproduct2_img5.png); background-size: 40px; width: 40px; height: 63px; }
+    .main_product .know_product .up li + li:nth-child(6):before { background-image: url(../m_images/mainproduct2_img6.png); background-size: 38px; width: 38px; height: 38px; }
+    .main_product .know_product .up li + li:nth-child(7):before { background-image: url(../m_images/mainproduct2_img7.png); background-size: 44px; width: 44px; height: 37px; }
+    .main_product .know_product .up li + li:nth-child(8):before { background-image: url(../m_images/mainproduct2_img8.png); background-size: 35px; width: 35px; height: 38px; }
     .main_product .know_product .up li {transition: none;}
     .main_product .know_product .up li a {padding-bottom: 0;}
     .main_product .know_product .up li h2 {line-height: 1.5; font-size: 20px;}
